@@ -1,0 +1,54 @@
+/* this is global css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* root has basic/dark color settings and below is light_mode which has light settings */
+
+:root {
+  --background_color_one: rgb(8, 8, 30);
+  --font_color_one: burlywood;
+  --font_color_two: aliceblue;
+  --font_color_three: rgb(80, 8, 8);
+}
+
+html.light {
+  --background_color_one: azure;
+  --font_color_one: rgb(140, 8, 8);
+  --font_color_two: black;
+  --font_color_three: darkgray;
+}
+
+@keyframes appearance {
+  from {
+      opacity: 0;
+  }
+
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes movement_two {
+  from {
+      width: 40vw;
+  }
+
+  to {
+      width: 60vw;
+  }
+}
+
+@keyframes color_change {
+  from {
+      color: var(--font_color_three);
+  }
+
+  to {
+      color: var(--font_color_one);
+  }
+}
